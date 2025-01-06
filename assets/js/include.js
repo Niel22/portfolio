@@ -133,7 +133,7 @@ const info = `<div class="bostami-parsonal-info-area">
 const menu = `<div class="bostami-main-menu-wrap">
     <nav class="bastami-main-menu main_menu">
         <ul>
-            <li class="active">
+            <li>
                 <a href="index.html">
                     <span>
                         <i class="fa-light fa-address-card"></i>
@@ -180,10 +180,23 @@ const menu = `<div class="bostami-main-menu-wrap">
 const includeHTML = async (selector, content) => {
     try{
         document.querySelector(selector).innerHTML = content;
+        const navLinks = document.querySelectorAll('.main_menu a');
+        
+        const currentPage = window.location.pathname.split('/').pop();
+        
+        console.log(currentPage);
+        
+        navLinks.forEach(link => {
+            const linkHref = link.getAttribute('href');
+            if (linkHref === currentPage) {
+                link.closest('li').classList.add('active'); 
+            }
+        });
     }catch(error){
         console.log(error.message);
     }
 }
+
 
 includeHTML('#header', header);
 includeHTML('#footer', footer);
