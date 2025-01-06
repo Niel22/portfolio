@@ -1,92 +1,174 @@
-<!DOCTYPE html>
-<html lang="en">
+<!Doctype html>
+<html class="no-js" lang="zxx">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>NIEL</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.modal.min.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/swipper.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
-    <!-- Header Section -->
-    <header class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <!-- <img src="images/profile.jpg" alt="Profile Picture" class="rounded-circle mb-3" width="150"> -->
-            <h1>James Daniel</h1>
-            <p class="lead">Backend Developer | Node.js Enthusiast | Laravel Lover</p>
-        </div>
-    </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container text-center">
-            <h2>About Me</h2>
-            <p class="mt-3">
-                Hello! I'm James, a passionate backend developer with expertise in Laravel, Node.js, and building efficient web applications. I love creating solutions that power modern web experiences.
-            </p>
-        </div>
-    </section>
+    <div class="page-wrapper home-1" data-background="assets/img/bg/page-bg-1.jpg">
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center">Projects</h2>
-            <div class="row mt-4">
-                <!-- Project 1 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Campus Bestie</h5>
-                            <p class="card-text">A multivendor platform for student entrepreneurs to showcase their products and services globally.</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
+        <!-- PRELOADER -->
+        <div id="preloader">
+            <div class="loader_line"></div>
+        </div>
+        <!-- /PRELOADER -->
+
+        <!-- header-start -->
+        <div class="bostami-header-area mb-30 z-index-5" id="header"></div>
+        <!-- header-end -->
+
+        <div class="container z-index-3">
+            <div class="row">
+
+                <!-- parsonal-info-start -->
+                <div class="col-xxl-3 col-xl-3" id="info"></div>
+                <!-- personal-info-end -->
+
+                <!-- about-page-start -->
+                <div class="col-xxl-8 col-xl-9">
+                    <div class="bostami-page-content-wrap">
+
+                        <!-- page title -->
+                        <div class="section-wrapper pl-60 pr-60 pt-60">
+                            <div class="bostami-page-title-wrap mb-35">
+                                <h2 class="page-title">About Me</h2>
+                                <p>I'm a passionate Backend Developer with a focus on creating clean and scalable
+                                    systems. Based in Lagos, Nigeria, I specialize in web development and API design. I
+                                    enjoy solving problems through code and delivering high-quality solutions.</p>
+                                <p>With experience working with both front-end and back-end technologies, I aim to help
+                                    companies build the tools that power their businesses, focusing on efficiency and
+                                    performance. I’ve worked on several personal projects, as well as contributing to
+                                    open-source communities.</p>
+                            </div>
                         </div>
+
+                        <!-- what-do -->
+                        <div class="section-wrapper pl-60 pr-60">
+                            <div class="bostami-section-title-wrap mb-30">
+                                <h3 class="section-title">What I Do</h3>
+                            </div>
+
+                            <div class="bostami-what-do-wrap mb-30">
+                                <div class="row">
+
+                                    <!-- single item -->
+                                    <!-- Backend Development -->
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6">
+                                        <div class="bostami-what-do-item bg-prink">
+                                            <div class="icon">
+                                                <i class="fa-solid fa-server"></i>
+                                                <!-- Updated icon for Backend Development -->
+                                            </div>
+                                            <div class="text">
+                                                <h4 class="title">Backend Development</h4>
+                                                <p>I build robust server-side applications using Node.js, Express, and
+                                                    Laravel, focusing on efficiency, scalability, and maintainability.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- API Design -->
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6">
+                                        <div class="bostami-what-do-item bg-catkrill">
+                                            <div class="icon">
+                                                <i class="fa-solid fa-plug"></i> <!-- Updated icon for API Design -->
+                                            </div>
+                                            <div class="text">
+                                                <h4 class="title">API Design</h4>
+                                                <p>I design RESTful APIs that are easy to integrate and maintain,
+                                                    ensuring secure and seamless data exchange between systems.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Database Management -->
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6">
+                                        <div class="bostami-what-do-item bg-catkrill">
+                                            <div class="icon">
+                                                <i class="fa-solid fa-database"></i>
+                                                <!-- Updated icon for Database Management -->
+                                            </div>
+                                            <div class="text">
+                                                <h4 class="title">Database Management</h4>
+                                                <p>Expert in managing and optimizing databases with MySQL, ensuring
+                                                    fast, reliable data access for applications and services.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Web Development -->
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6">
+                                        <div class="bostami-what-do-item bg-prink bg-blue">
+                                            <div class="icon">
+                                                <i class="fa-solid fa-laptop-code"></i>
+                                                <!-- Updated icon for Web Development -->
+                                            </div>
+                                            <div class="text">
+                                                <h4 class="title">Web Development</h4>
+                                                <p>From front-end design to back-end functionality, I create full-stack
+                                                    web applications with modern technologies such as Livewire and Laravel.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- footer copyright -->
+                        <div class="footer-copyright text-center pt-25 pb-25" id="footer"></div>
+
                     </div>
                 </div>
-                <!-- Project 2 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title">School Website</h5>
-                            <p class="card-text">A modern website for my dad's primary and secondary school in Nigeria, built using Laravel and Bootstrap.</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Node.js Logger</h5>
-                            <p class="card-text">A logging utility for Node.js applications to track and manage events seamlessly.</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
+
+                <!-- about-page-end -->
+
+                <!-- main-menu-start -->
+                <div class="col-xxl-1 d-xxl-block d-none" id="menu"></div>
+                <!-- main-menu-end -->
             </div>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container text-center">
-            <h2>Contact Me</h2>
-            <p class="mt-3">Feel free to reach out for collaboration or freelance opportunities!</p>
-            <a href="mailto:niel2264@gmail.com" class="btn btn-outline-primary">Email Me</a>
-        </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <div class="container">
-            <p>&copy; 2025 James Daniel. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS here -->
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swipper-bundle.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/jquery.modal.min.js"></script>
+    <script src="assets/js/appear.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
+
+<!-- Mirrored from bostami-bootstrap.ibthemespro.com/bostami-template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Jan 2025 08:34:42 GMT -->
+
 </html>
