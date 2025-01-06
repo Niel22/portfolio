@@ -37,8 +37,8 @@ const header = `<div class="container">
 
 </div>`;
 
-const footer = `<span>© 2024 All Rights Reserved by <a href="https://themeforest.net/user/elite-themes24" target="_blank"
-        rel="noopener noreferrer">elite-themes24</a>.</span>`;
+const footer = `<span>© 2025 All Rights Reserved by <a href="https://niel-dev.vercel.app" target="_blank"
+        rel="noopener noreferrer">NIEL</a>.</span>`;
 
 const info = `<div class="bostami-parsonal-info-area">
     <div class="bostami-parsonal-info-wrap">
