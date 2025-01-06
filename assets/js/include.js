@@ -1,5 +1,5 @@
 const footer = `<span class="fs-eight fw-medium n5-color order-sm-1">Copyright ©UIAXIS 2025
-                    <a href="index.html" class="fs-eight fw-medium n5-color">codenova</a>. All Rights Reserved.</span>`;
+                    <a href="" class="fs-eight fw-medium n5-color">codenova</a>. All Rights Reserved.</span>`;
 
 const info = `<div class="bostami-parsonal-info-area">
     <div class="bostami-parsonal-info-wrap">
@@ -91,7 +91,7 @@ const info = `<div class="bostami-parsonal-info-area">
     </div>
 </div>`;
 
-const top_header = `<a href="index.html" class="side-icon p1-color bgn2-color brn4">
+const top_header = `<a href="" class="side-icon p1-color bgn2-color brn4">
                     <i class="ph ph-seal-check"></i>
                 </a>
 
@@ -109,7 +109,7 @@ const sidebar = `<div class="sidebar-btn close-btn cursor-pointer d-block d-lg-n
                 <div class="side-menu-left">
                     <div>
                         <div class="d-flex flex-column gap-8 justify-content-center align-items-center mt-6">
-                            <a href="index.html" class="side-icon p1-color bgn2-color brn4">
+                            <a href="" class="side-icon p1-color bgn2-color brn4">
                                 <i class="ph ph-seal-check"></i>
                             </a>
                             <div class="d-flex flex-column align-items-center gap-1">
@@ -156,7 +156,7 @@ const sidebar = `<div class="sidebar-btn close-btn cursor-pointer d-block d-lg-n
                             <div class="menu-list">
                                 <ul class="d-flex flex-column gap-3">
                                     <li class="rounded-3">
-                                        <a href="index.html"
+                                        <a href=""
                                             class="d-flex align-items-center gap-2 n11-color fs-eight px-3 py-2"><i
                                                 class="ph ph-user fs-six"></i> About Me</a>
                                     </li>
@@ -194,7 +194,7 @@ const sidebar = `<div class="sidebar-btn close-btn cursor-pointer d-block d-lg-n
 const bottom_header = `<div class="header-bottom-menu w-full">
                     <ul class="d-flex gap-1 align-items-center justify-content-between">
                         <li class="rounded-3 bg1-color">
-                            <a href="index.html" class="d-flex align-items-center gap-2 n11-color fs-eight p-2">
+                            <a href="" class="d-flex align-items-center gap-2 n11-color fs-eight p-2">
                                 <span class="fs-five d-flex align-items-center justify-content-center">
                                     <i class="ph-fill ph-user"></i>
                                 </span>
