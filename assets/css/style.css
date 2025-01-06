@@ -60,7 +60,7 @@ body {
 }
 
 .display-one {
-  font-size: 80px;
+  font-size: 50px;
   line-height: 120%;
 }
 
@@ -208,7 +208,7 @@ li {
     line-height: 100%;
   }
   .display-one {
-    font-size: 72px;
+    font-size: 32px;
     line-height: 120%;
   }
   .display-two {
@@ -313,7 +313,7 @@ li {
     line-height: 100%;
   }
   .display-one {
-    font-size: 56px;
+    font-size: 26px;
     line-height: 67.2px;
   }
   .display-two {
