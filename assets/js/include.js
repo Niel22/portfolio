@@ -193,7 +193,7 @@ const sidebar = `<div class="sidebar-btn close-btn cursor-pointer d-block d-lg-n
 
 const bottom_header = `<div class="header-bottom-menu w-full">
                     <ul class="d-flex gap-1 align-items-center justify-content-between">
-                        <li class="rounded-3 bg1-color">
+                        <li class="rounded-3">
                             <a href="/" class="d-flex align-items-center gap-2 n11-color fs-eight p-2">
                                 <span class="fs-five d-flex align-items-center justify-content-center">
                                     <i class="ph-fill ph-user"></i>
