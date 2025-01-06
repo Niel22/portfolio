@@ -1,44 +1,5 @@
-const header = `<div class="container">
-    <div class="bostami-header-wrap">
-        <div class="row align-items-center">
-
-            <!-- logo -->
-            <div class="col-6">
-                <div class="bostami-header-logo">
-                    <a class="site-logo" href="">
-                        <h3>{{CODE-NOVA}}</h3>
-                    </a>
-                </div>
-            </div>
-
-            <!-- menu btn -->
-            <div class="col-6">
-                <div class="bostami-header-menu-btn text-right">
-                    <div class="dark-btn dark-btn-stored dark-btn-icon">
-                        <i class="fa-light fa-moon"></i>
-                        <i class="fa-light fa-sun"></i>
-                    </div>
-                    <div class="menu-btn toggle_menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- mobile menu -->
-    <div class="mobile-menu-wrap">
-        <div class="mobile-menu mobile_menu">
-        </div>
-    </div>
-
-</div>`;
-
-const footer = `<span>© 2025 All Rights Reserved by <a href="https://niel-dev.vercel.app" target="_blank"
-        rel="noopener noreferrer">NIEL</a>.</span>`;
+const footer = `<span class="fs-eight fw-medium n5-color order-sm-1">Copyright ©UIAXIS 2025
+                    <a href="index.html" class="fs-eight fw-medium n5-color">codenova</a>. All Rights Reserved.</span>`;
 
 const info = `<div class="bostami-parsonal-info-area">
     <div class="bostami-parsonal-info-wrap">
@@ -130,52 +91,188 @@ const info = `<div class="bostami-parsonal-info-area">
     </div>
 </div>`;
 
-const menu = `<div class="bostami-main-menu-wrap">
-    <nav class="bastami-main-menu main_menu">
-        <ul>
-            <li>
-                <a href="index.html">
-                    <span>
-                        <i class="fa-light fa-address-card"></i>
-                    </span>
-                    about
+const top_header = `<a href="index.html" class="side-icon p1-color bgn2-color brn4">
+                    <i class="ph ph-seal-check"></i>
                 </a>
-            </li>
-            <li>
-                <a href="resume.html">
-                    <span>
-                        <i class="fa-light fa-file-user"></i>
-                    </span>
-                    Resume
-                </a>
-            </li>
-            <li>
-                <a href="portfolio.html">
-                    <span>
-                        <i class="fa-light fa-briefcase"></i>
-                    </span>
-                    Works
-                </a>
-            </li>
-            <li>
-                <a href="blog.html">
-                    <span>
-                        <i class="fa-light fa-newspaper"></i>
-                    </span>
-                    Blogs
-                </a>
-            </li>
-            <li>
-                <a href="contact.html">
-                    <span>
-                        <i class="fa-light fa-address-book"></i>
-                    </span>
-                    contact
-                </a>
-            </li>
-        </ul>
-    </nav>
-</div>`;
+
+                <div class="d-flex gap-3 align-items-center">
+                    <a href="checkout.html" class="position-relative">
+                        <div class="side-icon bg1-color">
+                            <i class="ph ph-shopping-cart n11-color"></i>
+                        </div>
+                    </a>
+                    <button class="side-icon bg1-color mood_toggle">
+                        <i class="mood_icon ph-fill ph-moon fs-six n11-color"></i>
+                    </button>
+                </div>`
+
+const sidebar = `<div class="sidebar-btn close-btn cursor-pointer d-block d-lg-none">
+                <i class="ph ph-x fs-two p1-color"></i>
+            </div>
+
+            <div class="d-flex">
+                <div class="side-menu-left">
+                    <div>
+                        <div class="d-flex flex-column gap-8 justify-content-center align-items-center mt-6">
+                            <a href="index.html" class="side-icon p1-color bgn2-color brn4">
+                                <i class="ph ph-seal-check"></i>
+                            </a>
+                            <div class="d-flex flex-column align-items-center gap-1">
+                                <span class="toggle_name fs-eleven n5-color">DarkMode</span>
+                                <button class="side-icon bg1-color mood_toggle">
+                                    <i class="mood_icon ph-fill ph-moon fs-six n11-color"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-menu-right overflow-y-auto">
+                    <div class="d-flex flex-column gap-6 justify-content-between py-10 px-5 bgn2-color h-100">
+                        <div class="">
+                            <div class="sidebar-profile">
+                                <div class="position-relative">
+                                    <div class="profile-img1 d-flex justify-content-center overflow-hidden">
+                                        <img src="assets/images/profile.png" alt="user" class="" />
+                                    </div>
+                                    <span class="thumb">👋</span>
+                                </div>
+
+                                <h4 class="n5-color fw-semibold fs-five mt-2 text-center">
+                                    James Daniel
+                                </h4>
+                                <span class="n5-color fs-nine d-block text-center">Junior Backend Developer</span>
+                                <div class="d-flex justify-content-center gap-2 align-items-center mt-4">
+                                    <!-- <a href="javascript:void(0)" class="social-icon p1-color">
+                                        <i class="ph ph-facebook-logo"></i>
+                                    </a> -->
+                                    <a href="https://www.github.com/niel22" target="_blank" class="social-icon p1-color">
+                                        <i class="ph ph-github-logo"></i>
+                                    </a>
+                                    <a href="https://x.com/codeNovaNiel" target="_blank" class="social-icon p1-color">
+                                        <i class="ph ph-x-logo"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/novaniel" target="_blank" class="social-icon p1-color">
+                                        <i class="ph ph-linkedin-logo"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="line-divider my-4 my-md-8"></div>
+
+                            <div class="menu-list">
+                                <ul class="d-flex flex-column gap-3">
+                                    <li class="rounded-3 bg1-color">
+                                        <a href="index.html"
+                                            class="d-flex align-items-center gap-2 n11-color fs-eight px-3 py-2"><i
+                                                class="ph ph-user fs-six"></i> About Me</a>
+                                    </li>
+
+                                    <li class="rounded-3">
+                                        <a href="portfolio.html"
+                                            class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2">
+                                                <i class="ph ph-code-block fs-six"></i> Portfolio
+                                            </div>
+                                            <span class="n5-color bg2-color fs-ten px-1 pt-1 rounded-2 me-3">16</span>
+                                        </a>
+                                    </li>
+                                    <li class="rounded-3">
+                                        <a href="price.html"
+                                            class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2"><i
+                                                class="ph ph-briefcase fs-six"></i>Services &
+                                            Pricing</a>
+                                    </li>
+                                    <li class="rounded-3">
+                                        <a href="resume.html"
+                                            class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2"><i
+                                                class="ph ph-notebook fs-six"></i> Resume</a>
+                                    </li>
+                                    <li class="rounded-3">
+                                        <a href="products.html"
+                                            class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2"><i
+                                                class="ph ph-shopping-bag fs-six"></i>Products</a>
+                                    </li>
+                                    <li class="rounded-3">
+                                        <a href="blog.html"
+                                            class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2"><i
+                                                class="ph ph-newspaper-clipping fs-six"></i>Blog</a>
+                                    </li>
+                                    <li class="rounded-3">
+                                        <a href="contact.html"
+                                            class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2"><i
+                                                class="ph ph-envelope fs-six"></i>Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="contact.html"
+                            class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 mx-auto">
+                            <i class="ph ph-paper-plane-tilt"></i>Hire Me
+                        </a>
+                    </div>
+                </div>
+            </div>`;
+
+const bottom_header = `<div class="header-bottom-menu w-full">
+                    <ul class="d-flex gap-1 align-items-center justify-content-between">
+                        <li class="rounded-3 bg1-color">
+                            <a href="index.html" class="d-flex align-items-center gap-2 n11-color fs-eight p-2">
+                                <span class="fs-five d-flex align-items-center justify-content-center">
+                                    <i class="ph-fill ph-user"></i>
+                                </span>
+                                <span class="d-none d-md-block">About Me</span></a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html" class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center gap-2 n5-color fs-eight p-2">
+                                    <span class="fs-five d-flex align-items-center justify-content-center">
+                                        <i class="ph-fill ph-code-block"></i>
+                                    </span>
+                                    <span class="d-none d-md-block">Portfolio</span>
+                                </div>
+                                <span
+                                    class="n5-color bg2-color fs-ten px-1 pt-1 rounded-2 me-3 d-none d-md-block">16</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="price.html" class="d-flex align-items-center gap-2 n5-color fs-eight p-2">
+                                <span class="fs-five d-flex align-items-center justify-content-center">
+                                    <i class="ph-fill ph-briefcase"></i>
+                                </span>
+                                <span class="d-none d-md-block">Pricing</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="resume.html" class="d-flex align-items-center gap-2 n5-color fs-eight p-2">
+                                <span class="fs-five d-flex align-items-center justify-content-center"><i
+                                        class="ph-fill ph-notebook fs-six"></i></span>
+                                <span class="d-none d-md-block">Resume</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="products.html" class="d-flex align-items-center gap-2 n5-color fs-eight p-2">
+                                <span class="fs-five d-flex align-items-center justify-content-center">
+                                    <i class="ph-fill ph-shopping-bag"></i>
+                                </span>
+                                <span class="d-none d-md-block">Products</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html" class="d-flex align-items-center gap-2 n5-color fs-eight p-2">
+                                <span class="fs-five d-flex align-items-center justify-content-center">
+                                    <i class="ph-fill ph-newspaper-clipping"></i>
+                                </span>
+                                <span class="d-none d-md-block">Blog</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="d-flex align-items-center gap-2 n5-color fs-eight p-2">
+                                <span class="fs-five d-flex align-items-center justify-content-center"><i
+                                        class="ph-fill ph-envelope"></i></span>
+                                <span class="d-none d-md-block">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>`;
 
 const includeHTML = async (selector, content) => {
     try{
@@ -198,7 +295,8 @@ const includeHTML = async (selector, content) => {
 }
 
 
-includeHTML('#header', header);
 includeHTML('#footer', footer);
 includeHTML('#info', info);
-includeHTML('#menu', menu);
+includeHTML('#sidebar', sidebar);
+includeHTML('#top_header', top_header);
+includeHTML('#bottom_header', bottom_header);
