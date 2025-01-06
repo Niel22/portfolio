@@ -96,11 +96,6 @@ const top_header = `<a href="index.html" class="side-icon p1-color bgn2-color br
                 </a>
 
                 <div class="d-flex gap-3 align-items-center">
-                    <a href="checkout.html" class="position-relative">
-                        <div class="side-icon bg1-color">
-                            <i class="ph ph-shopping-cart n11-color"></i>
-                        </div>
-                    </a>
                     <button class="side-icon bg1-color mood_toggle">
                         <i class="mood_icon ph-fill ph-moon fs-six n11-color"></i>
                     </button>
@@ -160,12 +155,17 @@ const sidebar = `<div class="sidebar-btn close-btn cursor-pointer d-block d-lg-n
 
                             <div class="menu-list">
                                 <ul class="d-flex flex-column gap-3">
-                                    <li class="rounded-3 bg1-color">
+                                    <li class="rounded-3">
                                         <a href="index.html"
                                             class="d-flex align-items-center gap-2 n11-color fs-eight px-3 py-2"><i
                                                 class="ph ph-user fs-six"></i> About Me</a>
                                     </li>
 
+                                    <li class="rounded-3">
+                                        <a href="resume.html"
+                                            class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2"><i
+                                                class="ph ph-notebook fs-six"></i> Resume</a>
+                                    </li>
                                     <li class="rounded-3">
                                         <a href="portfolio.html"
                                             class="d-flex justify-content-between align-items-center">
@@ -174,27 +174,6 @@ const sidebar = `<div class="sidebar-btn close-btn cursor-pointer d-block d-lg-n
                                             </div>
                                             <span class="n5-color bg2-color fs-ten px-1 pt-1 rounded-2 me-3">16</span>
                                         </a>
-                                    </li>
-                                    <li class="rounded-3">
-                                        <a href="price.html"
-                                            class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2"><i
-                                                class="ph ph-briefcase fs-six"></i>Services &
-                                            Pricing</a>
-                                    </li>
-                                    <li class="rounded-3">
-                                        <a href="resume.html"
-                                            class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2"><i
-                                                class="ph ph-notebook fs-six"></i> Resume</a>
-                                    </li>
-                                    <li class="rounded-3">
-                                        <a href="products.html"
-                                            class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2"><i
-                                                class="ph ph-shopping-bag fs-six"></i>Products</a>
-                                    </li>
-                                    <li class="rounded-3">
-                                        <a href="blog.html"
-                                            class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2"><i
-                                                class="ph ph-newspaper-clipping fs-six"></i>Blog</a>
                                     </li>
                                     <li class="rounded-3">
                                         <a href="contact.html"
@@ -222,6 +201,13 @@ const bottom_header = `<div class="header-bottom-menu w-full">
                                 <span class="d-none d-md-block">About Me</span></a>
                         </li>
                         <li>
+                            <a href="resume.html" class="d-flex align-items-center gap-2 n5-color fs-eight p-2">
+                                <span class="fs-five d-flex align-items-center justify-content-center"><i
+                                        class="ph-fill ph-notebook fs-six"></i></span>
+                                <span class="d-none d-md-block">Resume</span>
+                            </a>
+                        </li>
+                        <li>
                             <a href="portfolio.html" class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex align-items-center gap-2 n5-color fs-eight p-2">
                                     <span class="fs-five d-flex align-items-center justify-content-center">
@@ -231,37 +217,6 @@ const bottom_header = `<div class="header-bottom-menu w-full">
                                 </div>
                                 <span
                                     class="n5-color bg2-color fs-ten px-1 pt-1 rounded-2 me-3 d-none d-md-block">16</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="price.html" class="d-flex align-items-center gap-2 n5-color fs-eight p-2">
-                                <span class="fs-five d-flex align-items-center justify-content-center">
-                                    <i class="ph-fill ph-briefcase"></i>
-                                </span>
-                                <span class="d-none d-md-block">Pricing</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="resume.html" class="d-flex align-items-center gap-2 n5-color fs-eight p-2">
-                                <span class="fs-five d-flex align-items-center justify-content-center"><i
-                                        class="ph-fill ph-notebook fs-six"></i></span>
-                                <span class="d-none d-md-block">Resume</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="products.html" class="d-flex align-items-center gap-2 n5-color fs-eight p-2">
-                                <span class="fs-five d-flex align-items-center justify-content-center">
-                                    <i class="ph-fill ph-shopping-bag"></i>
-                                </span>
-                                <span class="d-none d-md-block">Products</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="blog.html" class="d-flex align-items-center gap-2 n5-color fs-eight p-2">
-                                <span class="fs-five d-flex align-items-center justify-content-center">
-                                    <i class="ph-fill ph-newspaper-clipping"></i>
-                                </span>
-                                <span class="d-none d-md-block">Blog</span>
                             </a>
                         </li>
                         <li>
@@ -275,24 +230,34 @@ const bottom_header = `<div class="header-bottom-menu w-full">
                 </div>`;
 
 const includeHTML = async (selector, content) => {
-    try{
-        document.querySelector(selector).innerHTML = content;
-        const navLinks = document.querySelectorAll('.main_menu a');
-        
-        const currentPage = window.location.pathname.split('/').pop();
-        
-        console.log(currentPage);
-        
-        navLinks.forEach(link => {
-            const linkHref = link.getAttribute('href');
-            if (linkHref === currentPage) {
-                link.closest('li').classList.add('active'); 
-            }
-        });
-    }catch(error){
-        console.log(error.message);
-    }
-}
+  try {
+    document.querySelector(selector).innerHTML = content;
+    const navLinks = document.querySelectorAll(".header-bottom-menu a");
+
+    const currentPage = window.location.pathname.split("/").pop();
+
+    navLinks.forEach((link) => {
+      const linkHref = link.getAttribute("href").split("/").pop();
+
+      if (linkHref === currentPage) {
+        link.closest("li").classList.add("bg1-color");
+      }
+    });
+
+    const headernavLinks = document.querySelectorAll('.menu-list a'); 
+    const headercurrentPage = window.location.pathname.split('/').pop();
+    
+    headernavLinks.forEach(link => {
+        const linkHref = link.getAttribute('href').split('/').pop(); 
+
+        if (linkHref === headercurrentPage) {
+            link.closest('li').classList.add('bg1-color');
+        }
+    });
+  } catch (error) {
+    console.log(error.message);
+  }
+};
 
 
 includeHTML('#footer', footer);

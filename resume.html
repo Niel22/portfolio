@@ -1,195 +1,400 @@
-<!Doctype html>
-<html class="no-js" lang="zxx">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>NIEL</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
-    <!-- Place favicon.ico in the root directory -->
-
-    <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/odometer.min.css">
-    <link rel="stylesheet" href="assets/css/jquery.modal.min.css">
-    <link rel="stylesheet" href="assets/css/meanmenu.css">
-    <link rel="stylesheet" href="assets/css/swipper.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <style>
-        .knowledeges-item-wrap img {
-            margin: 5px;
-        }
-
-    </style>
+    <!-- required meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- #keywords -->
+    <meta name="keywords" content="boot, Bootstrap, Protfolily HTML Template" />
+    <!-- #description -->
+    <meta name="description" content="Protfolily - Responsive Personal Portfolio & Resume HTML Template" />
+    <!-- #title -->
+    <title>NIEL-Dev Portfolio</title>
+    <!-- #favicon -->
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon" />
+    <!-- ==== css dependencies start ==== -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- AOS  -->
+    <link rel="stylesheet" href="assets/unpkg.com/aos%403.0.0-beta.6/dist/aos.css" />
+    <!-- swiper  -->
+    <link rel="stylesheet" href="assets/cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.css" />
+    <!-- ICON  -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
 <body>
 
-    <div class="page-wrapper home-1" data-background="assets/img/bg/page-bg-1.jpg">
 
-        <!-- PRELOADER -->
-        <div id="preloader">
-            <div class="loader_line"></div>
-        </div>
-        <!-- /PRELOADER -->
+    <!-- preloder  srart -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- preloder  end -->
 
-        <!-- header-start -->
-        <div class="bostami-header-area mb-30 z-index-5" id="header"></div>
-        <!-- header-end -->
+    <div class="d-flex gap-6">
+        <!-- sidebar start -->
+        <div class="side-menu" id="sidebar"></div>
+        <!-- sidebar end -->
 
-        <div class="container z-index-3">
-            <div class="row">
+        <div class="main-content w-100">
+            <!-- top header  -->
+            <div class="w-100 bgn1-color p-3 position-fixed z-3 top-0 d-lg-none d-flex align-items-center justify-content-between br-bottom-n5 box-shadow1"
+                id="top_header"></div>
 
-                <!-- parsonal-info-start -->
-                <div class="col-xxl-3 col-xl-3" id="info"></div>
-                <!-- personal-info-end -->
+            <!-- bottom header  -->
+            <div class="w-100 bgn1-color p-3 position-fixed z-3 bottom-0 d-block d-lg-none br-top-n5 box-shadow1"
+                id="bottom_header"></div>
 
-                <!-- resume-page-start -->
-                <div class="col-xxl-8 col-xl-9">
-                    <div class="bostami-page-content-wrap">
+            <!-- color palettes btns -->
+            <div class="color-switcher" style="display: none;">
+                <button class="switcher-btn">
+                    <i class="ph ph-gear-six"></i>
+                </button>
+            </div>
 
-                        <!-- page title -->
-                        <div class="section-wrapper pl-60 pr-60 pt-60">
-                            <div class="bostami-page-title-wrap mb-15">
-                                <h2 class="page-title">resume</h2>
+            <!-- Resume section start -->
+            <section class="pt-120 pb-120 mt-10 mt-lg-0">
+                <div class="pb-60 br-bottom-n3">
+                    <div data-aos="zoom-in" class="page-heading">
+                        <h3 class="page-title fs-onefw-semibold n5-color mb-2 mb-md-3 text-center">
+                            Online Resume
+                        </h3>
+
+                        <a href="assets/images/resume.pdf"
+                            class="w-max primary-btn bg1-color fw-medium n1-color px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 mx-auto"
+                            download>
+                            <i class="ph ph-file-pdf"></i>Download PDF Version
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container mt-8 mt-md-15">
+                    <div data-aos="fade-up" class="bgn2-color p-4 p-sm-8 p-md-15 rounded-5 brn4">
+                        <div
+                            class="d-flex flex-wrap justify-content-between align-items-center gap-3 br-bottom-n3 pb-3 pb-md-6">
+                            <div>
+                                <h2 class="display-three p1-color fw-semibold">
+                                    James Daniel
+                                </h2>
+                                <span class="n4-color fs-six fw-medium">Junior Backend Developer</span>
+                            </div>
+                            <div class="ps-5 br-left-n3">
+                                <ul class="d-flex flex-column gap-3">
+                                    <li>
+                                        <a href="tel:+6494461709" class="d-flex gap-2 align-items-center n4-color">
+                                            <i class="ph ph-phone"></i> +234 810 9414 647</a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:niel2264@gmail.com"
+                                            class="d-flex gap-2 align-items-center n4-color">
+                                            <i class="ph ph-envelope-simple"></i>niel2264@gmail.com</a>
+                                    </li>
+                                    <li class="d-flex gap-2 align-items-center n4-color">
+                                        <i class="ph ph-globe"></i> https://niel-dev.vercel.app
+                                    </li>
+                                    <li class="d-flex gap-2 align-items-center n4-color">
+                                        <i class="ph ph-map-pin"></i> Lagos, Nigeria
+                                    </li>
+                                </ul>
                             </div>
                         </div>
 
-                        <div class="section-wrapper pl-60 pr-60 mb-60">
-                            <div class="row">
+                        <div
+                            class="d-flex flex-wrap flex-md-nowrap align-items-center gap-5 gap-md-10 pb-4 pb-md-8 br-bottom-n3 pt-60">
+                            <div class="resume-profile flex-shrink-0"> <img src="assets/images/profile.png"
+                                    alt="profile" class="object-fit-cover" width="100%" height="159" /> </div>
+                            <p class="n42-color fs-seven"> I am James Daniel, a backend developer from Lagos, Nigeria,
+                                with a strong focus on writing clean and efficient code. I specialize in backend
+                                technologies like PHP (Laravel), and MySQL, and I have a passion for building
+                                scalable web applications and APIs. I take pride in writing maintainable and
+                                well-structured code while ensuring performance and scalability.
+                                I work well in team environments, collaborating closely with other developers to deliver
+                                high-quality solutions. My experience with system design helps me approach complex
+                                problems methodically, ensuring the systems I build are robust and long-lasting.
 
-                                <!-- education -->
-                                <div class="col-xl-6 col-lg-7">
-                                    <div class="bostami-section-title-wrap mb-20">
-                                        <h4 class="section-title"><i class="fa-light fa-school"></i>Education</h4>
+                                I’m always focused on delivering effective solutions that meet the needs of users, and I
+                                continuously aim to improve and optimize the systems I work on. Whether working
+                                independently or within a team, I am committed to making a positive impact through my
+                                technical skills and dedication.
+                            </p>
+                        </div>
+
+                        <div class="resume-section row g-6 pt-60 pb-60 br-bottom-n3">
+                            <div class="col-md-8 col-lg-12 col-xl-8 col-xxl-9">
+                                <div class="d-flex align-items-center gap-2 mb-5 mb-md-10">
+                                    <div class="title-line2"></div>
+                                    <h2 class="fs-three p1-color fw-semibold">
+                                        Work Experiences
+                                    </h2>
+                                </div>
+
+                                <div class="mb-4 mb-md-6">
+                                    <div
+                                        class="d-flex flex-wrap gap-1 gap-sm-3 justify-content-between align-items-center">
+                                        <span class="n5-color fs-six fw-medium">Web Development Trainee</span>
+                                        <span class="n4-color fs-eight"><a href="https://kudastech.com"
+                                                target="_blank">Kudastech</a> | 2023 - 2024</span>
                                     </div>
+                                    <p class="n42-color fs-seven my-2 my-md-5">
+                                        During my time at Kudastech, I gained extensive knowledge in web development,
+                                        mastering both frontend and backend technologies. I started with the
+                                        fundamentals of HTML, CSS, and JavaScript, then progressed to using Bootstrap
+                                        for responsive design. On the backend, I honed my skills in PHP and MySQL, while
+                                        also working with Laravel and Livewire to build robust, scalable web
+                                        applications.
+                                        I learned how to integrate these applications with databases and ensure their
+                                        smooth functionality through modern development practices. This hands-on
+                                        experience has equipped me with a solid foundation in full-stack development,
+                                        enabling me to create dynamic applications and collaborate effectively within a
+                                        team environment.
+                                    </p>
 
-                                    <div class="bostami-card-wrap">
-                                        <div class="bostami-card-item bg-catkrill mb-20">
-                                            <span class="card-subtitle">2022-2024</span>
-                                            <h6 class="card-title">Computer Science  <span>- National Diploma</span>
-                                            </h6>
-                                            <p class="card-text">Federal Polytechnic Ilaro, <br>Ogun State, Nigeria.</p>
+                                    <ul class="d-flex flex-column gap-3 ms-6 ms-lg-10">
+                                        <li class="n42-color fs-seven">Built responsive websites using HTML, CSS,
+                                            JavaScript, and Bootstrap</li>
+                                        <li class="n42-color fs-seven">Developed dynamic applications using PHP, MySQL,
+                                            and Laravel</li>
+                                        <li class="n42-color fs-seven">Implemented Livewire for interactive user
+                                            interfaces</li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="mb-4 mb-md-6">
+                                    <div
+                                        class="d-flex flex-wrap gap-1 gap-sm-3 justify-content-between align-items-center">
+                                        <span class="n5-color fs-six fw-medium">Backend Development Intern</span>
+                                        <span class="n4-color fs-eight"> <a href="https://zealaraxtechnologies.com/"
+                                                target="_blank">Zealarax Technologies</a> | 2024 - Present</span>
+                                    </div>
+                                    <p class="n42-color fs-seven my-2 my-md-5">
+                                        In my current role as a Backend Development Intern at Zealarax Technologies, I
+                                        am responsible for building and maintaining scalable APIs to support various
+                                        applications. I work with PHP, Laravel, and MySQL to develop backend services
+                                        and ensure smooth integration with the frontend. My role also involves testing
+                                        and debugging code to optimize the performance of the applications.
+                                        I collaborate closely with a team of developers, learning to implement best
+                                        practices in clean code, system design, and efficient database management.
+                                        Working in a team environment, I contribute to the development of robust
+                                        solutions, continuously improving my skills and understanding of modern web
+                                        technologies and API development.
+                                    </p>
+                                    <ul class="d-flex flex-column gap-3 ms-6 ms-lg-10">
+                                        <li class="n42-color fs-seven">
+                                            Develop and maintain scalable APIs using PHP and Laravel.
+                                        </li>
+                                        <li class="n42-color fs-seven">
+                                            Collaborate with team members to design and implement backend services.
+                                        </li>
+                                        <li class="n42-color fs-seven">
+                                            Optimize code and ensure efficient database management for smooth
+                                            performance.
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+
+                                <div class="d-flex align-items-center gap-2 mb-5 mb-md-10">
+                                    <div class="title-line2"></div>
+                                    <h2 class="fs-three p1-color fw-semibold">Projects</h2>
+                                </div>
+
+                                <div class="mb-4 mb-md-6">
+                                    <div
+                                        class="d-flex flex-wrap gap-1 gap-sm-3 justify-content-between align-items-center mb-2 mb-md-4">
+                                        <span class="n5-color fs-six fw-medium">Shoe Showcasing Website</span>
+                                        <span class="n42-color fs-eight">Personal Project</span>
+                                    </div>
+                                    <p class="n42-color fs-seven">
+                                        This is a website I built to showcase various shoe collections. The platform
+                                        allows users to browse through different categories, filter products, and view
+                                        detailed information about each shoe. Built with Laravel and integrated with a
+                                        MySQL database, this project demonstrates my skills in backend development,
+                                        clean code, and system design. It is fully responsive and includes features such
+                                        as product search, user authentication, and a seamless shopping experience.
+                                    </p>
+                                </div>
+
+                                <div class="mb-4 mb-md-6">
+                                    <div
+                                        class="d-flex flex-wrap gap-1 gap-sm-3 justify-content-between align-items-center mb-2 mb-md-4">
+                                        <span class="n5-color fs-six fw-medium">Blog Platform</span>
+                                        <span class="n42-color fs-eight">Personal Project</span>
+                                    </div>
+                                    <p class="n42-color fs-seven">
+                                        The Blog Platform is a project I developed to create an easy-to-use blogging
+                                        system where users can create, manage, and share posts. This platform includes
+                                        features such as content management, user profiles, and a clean, modern UI. I
+                                        built it using Laravel for the backend and MySQL for data management, allowing
+                                        me to demonstrate my skills in Backend development, database management, and system
+                                        design. It is designed to be scalable and user-friendly.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <!-- right side  -->
+                            <div class="col-md-4 col-lg-12 col-xl-4 col-xxl-3">
+                                <div class="ps-4 ps-xxl-7 br-left-n3 d-flex flex-column gap-8 gap-md-15">
+                                    <!-- skills  -->
+                                    <div>
+                                        <div class="d-flex align-items-center gap-2 mb-5 mb-md-10">
+                                            <div class="title-line2"></div>
+                                            <h2 class="fs-three p1-color fw-semibold">Skills</h2>
                                         </div>
+
+                                        <div class="mb-3 mb-md-6">
+                                            <h5 class="fs-six n5-color fw-medium mb-2 mb-md-4">
+                                                Technical Skills
+                                            </h5>
+                                            <ul class="d-flex flex-column gap-3 ms-6 ms-lg-10">
+                                                <li class="n4-color fs-seven">
+                                                    HTML, CSS, Bootstrap, JavaScript
+                                                </li>
+                                                <li class="n4-color fs-seven">PHP (Laravel & Livewire)</li>
+                                                <li class="n4-color fs-seven">MySQL, Database Design & Management</li>
+                                                <li class="n4-color fs-seven">Clean Code & Best Practices</li>
+                                                <li class="n4-color fs-seven">
+                                                    Object-Oriented Design (OOD) and SOLID Principles
+                                                </li>
+                                                <li class="n4-color fs-seven">
+                                                    API Development & Integration (RESTful APIs, JSON, Laravel sanctum authentication)
+                                                </li>
+                                                <li class="n4-color fs-seven">
+                                                    System Architecture and Scalable Web Application Design
+                                                </li>
+                                                <li class="n4-color fs-seven">
+                                                    Collaboration with cross-functional teams to deliver high-quality software
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        
+
+                                        <div>
+                                            <h5 class="fs-six n5-color fw-medium mb-2 mb-md-4">
+                                                Professional Skills
+                                            </h5>
+                                            <ul class="d-flex flex-column gap-3 ms-6 ms-lg-10">
+                                                <li class="n4-color fs-seven">
+                                                    Excellent communication skills, both written and verbal
+                                                </li>
+                                                <li class="n4-color fs-seven">
+                                                    Strong team player with the ability to collaborate effectively in cross-functional teams
+                                                </li>
+                                                <li class="n4-color fs-seven">
+                                                    Analytical and solution-oriented problem solver with a focus on creating efficient solutions
+                                                </li>
+                                                <li class="n4-color fs-seven">
+                                                    Effective time management and ability to meet deadlines in fast-paced environments
+                                                </li>
+                                                <li class="n4-color fs-seven">
+                                                    Adaptable and open to feedback for continuous learning and improvement
+                                                </li>
+                                                <li class="n4-color fs-seven">
+                                                    Leadership experience in guiding team members and delivering complex projects
+                                                </li>
+                                                <li class="n4-color fs-seven">
+                                                    Passionate about building scalable systems and delivering high-quality software
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        
                                     </div>
 
-
-
-                                </div>
-
-                                <!-- education -->
-                                <div class="col-xl-6 col-lg-5">
-                                    <div class="bostami-section-title-wrap mb-20">
-                                        <h4 class="section-title"><i class="fa-light fa-briefcase"></i>experience</h4>
-                                    </div>
-
-                                    <div class="bostami-card-item bg-catkrill  mb-20">
-                                        <span class="card-subtitle">2023 - 2024</span>
-                                        <h6 class="card-title">Web Development Trainee</h6>
-                                        <p class="card-text"><a href="https://kudastech.com" target="_blank">Kudastech</a></p>
-                                    </div>
-
-                                    <div class="bostami-card-item bg-catkrill  mb-20">
-                                        <span class="card-subtitle">2024 - Present</span>
-                                        <h6 class="card-title">Backend Development Intern</h6>
-                                        <p class="card-text"><a href="https://zealaraxtechnologies.com/" target="_blank">Zealarax Technologies</a></p>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="section-wrapper bg-light-white-2 pt-70 pb-60 pl-60 pr-60">
-                            <div class="row">
-
-                                <div class="col-xl-6 col-lg-7">
-                                    <div class="bostami-section-title-wrap mb-20">
-                                        <h4 class="section-title">Tools & Technologies</h4>
-                                    </div>
-                                    <div class="skill-bar-wrap">
-                                        <div class="mb-30">
-                                            <div class="knowledeges-item-wrap">
-                                                <img src="https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white&style=for-the-badge" alt="HTML">
-                                                <img src="https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white&style=for-the-badge" alt="CSS">
-                                                <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge" alt="JavaScript">
-                                                <img src="https://img.shields.io/badge/-PHP-777BB4?logo=php&logoColor=white&style=for-the-badge" alt="PHP">
-                                                <img src="https://img.shields.io/badge/-SQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge" alt="SQL">
-                                                <img src="https://img.shields.io/badge/-Laravel-FF2D20?logo=laravel&logoColor=white&style=for-the-badge" alt="Laravel">
-                                                <img src="https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white&style=for-the-badge" alt="Node.js">
-                                                <img src="https://img.shields.io/badge/-Express.js-000000?logo=express&logoColor=white&style=for-the-badge" alt="Express.js">
-                                                <img src="https://img.shields.io/badge/-Livewire-4EAF23?logo=livewire&logoColor=white&style=for-the-badge" alt="Livewire">
-                                                <img src="https://img.shields.io/badge/-Bootstrap-563D7C?logo=bootstrap&logoColor=white&style=for-the-badge" alt="Bootstrap">
-                                                <img src="https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white&style=for-the-badge" alt="Git">
-                                                <img src="https://img.shields.io/badge/-Postman-FF6C37?logo=postman&logoColor=white&style=for-the-badge" alt="Postman">
-                                                <img src="https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge" alt="MySQL">
-                                                <img src="https://img.shields.io/badge/-VS_Code-007ACC?logo=visualstudiocode&logoColor=white&style=for-the-badge" alt="VS Code">
-                                                <img src="https://img.shields.io/badge/-Jira-0052CC?logo=jira&logoColor=white&style=for-the-badge" alt="Jira">
-                                                <img src="https://img.shields.io/badge/-Linux-FCC624?logo=linux&logoColor=black&style=for-the-badge" alt="Linux">
+                                    <!-- education  -->
+                                    <div>
+                                        <div class="d-flex align-items-center gap-2 mb-3 mb-md-6">
+                                            <div class="title-line2"></div>
+                                            <h2 class="fs-three p1-color fw-semibold">Education</h2>
+                                        </div>
+                                        <div class="d-flex gap-2 mb-3 mb-md-5">
+                                            <i class="ph ph-graduation-cap fs-six p1-color"></i>
+                                            <div>
+                                                <span class="n4-color fs-seven">National Diploma in Computer Science - The Federal Polyetchnic Ilaro, Ilaro, Ogun State</span>
+                                                <span class="n4-color fs-eleven">2022 - 2024</span>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-
-                            
-                                <div class="col-xl-6 col-lg-5">
-                                    <div class="bostami-section-title-wrap mb-20">
-                                        <h4 class="section-title">Knowledges</h4>
+                                    <!-- Languages  -->
+                                    <div>
+                                        <div class="d-flex align-items-center gap-2 mb-3 mb-md-6">
+                                            <div class="title-line2"></div>
+                                            <h2 class="fs-three p1-color fw-semibold">Languages</h2>
+                                        </div>
+                                        <ul class="d-flex flex-column gap-3 ms-6 ms-lg-10">
+                                            <li class="n4-color fs-seven">English(Professional)</li>
+                                            
+                                        </ul>
                                     </div>
-                                
-                                    <div class="knowledeges-item-wrap">
-                                        <span class="gk-item">Database Design</span>
-                                        <span class="gk-item">MVC Architecture</span>
-                                        <span class="gk-item">System Design</span>
-                                        <span class="gk-item">RESTful API Design</span>
-                                        <span class="gk-item">Object-Oriented Programming (OOP)</span>
-                                        <span class="gk-item">Agile Methodology</span>
-                                        <span class="gk-item">Team Collaboration</span>
-                                        <span class="gk-item">Time Management</span>
-                                        <span class="gk-item">Problem-Solving Skills</span>
+                                    <!-- Interests  -->
+                                    <div>
+                                        <div class="d-flex align-items-center gap-2 mb-3 mb-md-6">
+                                            <div class="title-line2"></div>
+                                            <h2 class="fs-three p1-color fw-semibold">Interests</h2>
+                                        </div>
+                                        <ul class="d-flex flex-column gap-3 ms-6 ms-lg-10">
+                                            <li class="n4-color fs-seven">Sci-Fi Movies</li>
+                                            <li class="n4-color fs-seven">Tech Contents</li>
+                                            <li class="n4-color fs-seven">Programming Documentations & Articles</li>
+                                            <li class="n4-color fs-seven">Offline Games</li>
+                                        </ul>
                                     </div>
                                 </div>
-                                
+                            </div>
                         </div>
 
-
-
+                        <div
+                            class="d-flex flex-wrap gap-2 gap-md-3 gap-md-5 align-items-center justify-content-center mt-4 mt-md-8">
+                            <a href="https://www.github.com/niel22" target="_blank" class="d-flex gap-1 align-items-center resume-icon">
+                                <div class="social-icon">
+                                    <i class="ph ph-github-logo p1-color"></i>
+                                </div>
+                                <span class="fs-nine n4-color">github.com/Niel22</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/novaniel" target="_blank" class="d-flex gap-1 align-items-center resume-icon">
+                                <div class="social-icon">
+                                    <i class="ph ph-linkedin-logo p1-color"></i>
+                                </div>
+                                <span class="fs-nine n4-color">linkedin.com/in/novaniel</span>
+                            </a>
+                            <a href="https://www.x.com/codenovaniel" target="_blank" class="d-flex gap-1 align-items-center resume-icon">
+                                <div class="social-icon">
+                                    <i class="ph ph-x-logo p1-color"></i>
+                                </div>
+                                <span class="fs-nine n4-color">@codenovaniel</span>
+                            </a>
                         </div>
-
-                        <!-- footer copyright -->
-                        <div class="footer-copyright text-center pt-25 pb-25" id="footer"></div>
-
                     </div>
                 </div>
-                <!-- resume-page-end -->
+            </section>
+            <!-- Resume section end -->
 
-                <!-- main-menu-start -->
-                <div class="col-xxl-1 d-xxl-block d-none" id="menu"></div>
-                <!-- main-menu-end -->
-            </div>
+
+            <!-- footer section start -->
+            <section
+                class="container d-flex flex-wrap gap-3 gap-md-6 justify-content-center justify-content-sm-between align-items-center pb-4 pb-md-8 text-center mb-16 mb-lg-0"
+                id="footer"></section>
+            <!-- footer section end -->
         </div>
-
     </div>
 
-    <!-- JS here -->
+    <!-- script js  -->
     <script src="assets/js/include.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/swipper-bundle.min.js"></script>
-    <script src="assets/js/jquery.meanmenu.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/odometer.min.js"></script>
-    <script src="assets/js/jquery.modal.min.js"></script>
-    <script src="assets/js/appear.min.js"></script>
+    <script src="assets/js/plugins/plugins.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/type-word.js"></script>
+    <!-- swiper js  -->
+    <script src="assets/cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.js"></script>
+    <!-- email js  -->
+    <script type="text/javascript" src="assets/cdn.jsdelivr.net/npm/%40emailjs/browser%404/dist/email.min.js"></script>
+    <!-- aos -->
+    <script src="assets/unpkg.com/aos%403.0.0-beta.6/dist/aos.js"></script>
 </body>
 
-
-<!-- Mirrored from bostami-bootstrap.ibthemespro.com/bostami-template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Jan 2025 08:34:42 GMT -->
 
 </html>
