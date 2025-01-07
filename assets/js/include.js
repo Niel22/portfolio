@@ -1,4 +1,4 @@
-const footer = `<span class="fs-eight fw-medium n5-color order-sm-1">Copyright ©UIAXIS 2025
+const footer = `<span class="fs-eight fw-medium n5-color order-sm-1">Copyright ©2025
                     <a href="/" class="fs-eight fw-medium n5-color">codenova</a>. All Rights Reserved.</span>`;
 
 const info = `<div class="bostami-parsonal-info-area">
