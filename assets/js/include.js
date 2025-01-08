@@ -127,7 +127,7 @@ const sidebar = `<div class="sidebar-btn close-btn cursor-pointer d-block d-lg-n
                             <div class="sidebar-profile">
                                 <div class="position-relative">
                                     <div class="profile-img1 d-flex justify-content-center overflow-hidden">
-                                        <img src="assets/images/profile.png" alt="user" class="" />
+                                        <img src="assets/images/profile.jpg" alt="user" class="" />
                                     </div>
                                     <span class="thumb">👋</span>
                                 </div>
@@ -167,7 +167,7 @@ const sidebar = `<div class="sidebar-btn close-btn cursor-pointer d-block d-lg-n
                                                 class="ph ph-notebook fs-six"></i> Resume</a>
                                     </li>
                                     <li class="rounded-3">
-                                        <a href="portfolio.html"
+                                        <a href="portfolios.html"
                                             class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2">
                                                 <i class="ph ph-code-block fs-six"></i> Portfolio
@@ -208,7 +208,7 @@ const bottom_header = `<div class="header-bottom-menu w-full">
                             </a>
                         </li>
                         <li>
-                            <a href="portfolio.html" class="d-flex justify-content-between align-items-center">
+                            <a href="portfolios.html" class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex align-items-center gap-2 n5-color fs-eight p-2">
                                     <span class="fs-five d-flex align-items-center justify-content-center">
                                         <i class="ph-fill ph-code-block"></i>
