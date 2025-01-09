@@ -172,7 +172,6 @@ const sidebar = `<div class="sidebar-btn close-btn cursor-pointer d-block d-lg-n
                                             <div class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2">
                                                 <i class="ph ph-code-block fs-six"></i> Portfolio
                                             </div>
-                                            <span class="n5-color bg2-color fs-ten px-1 pt-1 rounded-2 me-3">16</span>
                                         </a>
                                     </li>
                                     <li class="rounded-3">
